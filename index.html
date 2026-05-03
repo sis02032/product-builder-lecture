@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Lotto Lucky 5 - Premium Number Generator</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div class="app-container">
+    <header>
+      <h1>Lotto <span class="highlight">Lucky 5</span></h1>
+      <p>Your premium gateway to luck</p>
+    </header>
+
+    <main id="lotto-display">
+      <!-- 5 Game slots will be generated here -->
+      <div class="game-placeholder">Click the button to generate your lucky numbers</div>
+    </main>
+
+    <div class="actions">
+      <button id="generate-btn">
+        <span class="btn-text">Generate Numbers</span>
+        <span class="btn-glow"></span>
+      </button>
+    </div>
+
+    <footer>
+      <p>For entertainment purposes only. Play responsibly.</p>
+    </footer>
+  </div>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
