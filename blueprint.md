@@ -22,6 +22,6 @@ A simple framework-less web project using HTML, CSS, and JavaScript, following m
 
 **Steps:**
 - [x] Create `blueprint.md`.
-- [ ] Set git remote.
-- [ ] Stage and commit files.
-- [ ] Push to GitHub.
+- [x] Set git remote.
+- [x] Stage and commit files.
+- [x] Push to GitHub.
