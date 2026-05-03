@@ -132,18 +132,93 @@ header p {
   color: var(--text-muted);
 }
 
-.lotto-card {
+.lotto-card, .form-card {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
   padding: 1.5rem;
   border-radius: 1.25rem;
   border: 1px solid var(--card-border);
   box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.lotto-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
   animation: slideIn 0.5s ease out both;
+}
+
+.form-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: var(--btn-shadow);
+}
+
+.submit-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
 }
 
 .lotto-card:hover {

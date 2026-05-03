@@ -15,16 +15,15 @@ A simple framework-less web project using HTML, CSS, and JavaScript, following m
 - Modern web development guidelines via `GEMINI.md`.
 - **Lotto Number Generator:** Generates 5 sets of 6 unique numbers (1-45) with a premium UI.
 - **Theme Support:** Dark/Light mode toggle with persistence via `localStorage`.
+- **Partnership Form:** Integrated with Formspree for handling inquiries.
 
-## Current Task: Implement Dark/Light Mode & Deployment
+## Current Task: Implement Partnership Form & Deployment
 **Plan:**
-1. Add theme toggle UI to `index.html`.
-2. Define CSS variables and theme-specific styles in `style.css`.
-3. Implement theme toggle logic and persistence in `main.js`.
-4. Deploy final changes to GitHub.
+1. Add partnership form structure to `index.html`.
+2. Style the form in `style.css` for Dark/Light modes.
+3. Deploy final changes to GitHub.
 
 **Steps:**
-- [x] Add theme toggle UI.
-- [x] Implement theme styling (Dark/Light).
-- [x] Implement toggle logic & persistence.
+- [x] Add form UI to `index.html`.
+- [x] Style form in `style.css`.
 - [x] Push to GitHub.
